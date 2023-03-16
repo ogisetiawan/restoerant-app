@@ -42,10 +42,14 @@ module.exports = merge(common, {
       }
     ]
   },
+  // ? for nelify deployment
+  // plugins: [
+  //   new BundleAnalyzerPlugin({
+  //     analyzerMode: 'static',
+  //     openAnalyzer: false
+  //   })
+  // ]
   plugins: [
-    new BundleAnalyzerPlugin({
-      analyzerMode: 'static',
-      openAnalyzer: false
-    })
+    new BundleAnalyzerPlugin()
   ]
 })
