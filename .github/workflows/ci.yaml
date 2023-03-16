@@ -7,7 +7,7 @@ on:
  
 jobs:
   test:
-    runs-on: ubuntu-latestf
+    runs-on: ubuntu-latest
  
     strategy:
       matrix:
