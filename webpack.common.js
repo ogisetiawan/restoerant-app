@@ -27,13 +27,13 @@ module.exports = {
             loader: 'css-loader'
           }
         ]
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        use: [
-          'file-loader'
-        ]
       }
+      // {
+      //   test: /\.(png|svg|jpg|jpeg|gif)$/,
+      //   use: [
+      //     'file-loader'
+      //   ]
+      // }
     ]
   },
   plugins: [
@@ -45,11 +45,11 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/public/'),
-          to: path.resolve(__dirname, 'dist/'),
-          globOptions: {
-            // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder hero
-            ignore: ['**/**/heros/**']
-          }
+          to: path.resolve(__dirname, 'dist/')
+          // globOptions: {
+          //   // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder hero
+          //   ignore: ['**/**/heros/**']
+          // }
         }
       ]
     }),
